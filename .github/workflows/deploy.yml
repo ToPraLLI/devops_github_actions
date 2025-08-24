@@ -16,5 +16,6 @@ jobs:
 
       - name: Литинг
         run: npm run lint
+
       - name: Тестирование
         run: npm run test
