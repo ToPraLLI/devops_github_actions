@@ -39,4 +39,4 @@ jobs:
             docker pull ${{ secrets.DOCKER_USER }}/devops_github_actions:${{ github.sha }}
             docker stop devops_github_actions || true
             docker rm devops_github_actions || true
-            docker run -d --name devops-node-starter -p 4545:4545 ${{ secrets.DOCKER_USER }}/devops_github_actions:${{ github.sha }}
+            docker run -d --name devops_github_actions -p 4545:4545 ${{ secrets.DOCKER_USER }}/devops_github_actions:${{ github.sha }}
